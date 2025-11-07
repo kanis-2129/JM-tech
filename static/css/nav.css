@@ -1,0 +1,23 @@
+/* Navbar specific styles (white text + search) */
+.navbar{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;background:#2563eb;border-bottom:1px solid rgba(0,0,0,0.08);color:#fff}
+.navbar .logo{font-size:1.3rem;color:#fff}
+.navbar .nav-links{list-style:none;display:flex;gap:16px}
+.navbar .nav-links a{color:#fff;text-decoration:none;padding:6px 8px;border-radius:6px}
+.navbar .nav-links a:hover{background:rgba(255,255,255,0.08)}
+.navbar .nav-links a.active{color:#fff;font-weight:700;box-shadow:inset 0 -3px 0 rgba(255,255,255,0.08)}
+.navbar .nav-icons{display:flex;align-items:center;gap:8px}
+.navbar .nav-account{background:#fff;color:#2563eb;border:0;padding:8px 12px;border-radius:6px}
+
+/* Search */
+.nav-search{display:flex;align-items:center;gap:8px;margin-left:16px}
+.nav-search input[type="search"]{padding:8px 10px;border-radius:8px;border:0;min-width:180px;background:rgba(255,255,255,0.12);color:#fff}
+.nav-search input::placeholder{color:rgba(255,255,255,0.8)}
+.nav-search .search-btn{background:transparent;border:0;color:#fff;font-size:1rem;cursor:pointer;padding:6px}
+
+/* small screens: stack links and move search */
+@media (max-width:760px){
+  .navbar{flex-wrap:wrap;padding:10px}
+  .navbar .nav-links{width:100%;justify-content:space-around;margin:10px 0}
+  .nav-search{width:100%;justify-content:center;margin-bottom:8px}
+  .nav-search input{min-width:140px}
+}

@@ -1,0 +1,33 @@
+/* Basic reset */
+*{box-sizing:border-box;margin:0;padding:0;font-family:Segoe UI,Roboto,Arial,sans-serif}
+body{background:#fff;color:#222;line-height:1.4}
+
+/* Navbar */
+.navbar{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;background:#fff;border-bottom:1px solid #eee}
+.logo{font-size:1.5rem;color:#1f2937}
+.nav-links{list-style:none;display:flex;gap:18px}
+.nav-links a{color:#374151;text-decoration:none}
+.nav-account{background:#2563eb;color:#fff;border:0;padding:8px 12px;border-radius:6px}
+
+/* Hero slider */
+.heroSlide{max-width:1100px;margin:36px auto;padding:0 16px}
+.bannerOne{display:flex;gap:24px;align-items:center;padding:20px;border-radius:10px;overflow:hidden;background:#f8fafc;opacity:0;transform:translateY(10px);transition:all .5s}
+.bannerOne.active{opacity:1;transform:none}
+.bannerText{flex:1}
+.heroSlide-head{font-size:1.8rem;margin-bottom:6px;color:#111827}
+.heroSlide-secondHead{font-size:1rem;color:#2563eb;margin-bottom:8px}
+.heroSlide-para{color:#4b5563;margin-bottom:12px}
+.banner-btn{background:#10b981;color:#fff;border:0;padding:10px 14px;border-radius:6px;cursor:pointer}
+.bannerImage{width:300px}
+.bannerImage img{width:100%;height:auto;display:block;border-radius:8px}
+
+/* Dashboard */
+.dashboard-page{max-width:1000px;margin:36px auto;padding:0 16px}
+.dashboard{display:flex;gap:16px}
+.dashboard-card{background:#fff;padding:10px;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,0.06);text-align:center}
+.dashboard-img{width:160px;height:auto;display:block;margin:0 auto 8px}
+
+.site-footer{text-align:center;padding:18px;color:#6b7280;margin-top:40px}
+
+/* Responsive */
+@media (max-width:760px){.bannerOne{flex-direction:column}.bannerImage{width:100%}}
